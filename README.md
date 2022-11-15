@@ -12,9 +12,11 @@ you're part of the targetted audince. Theres a "documentation.md" in the base fo
 import MySEAS
 
 MySEAS.setWnDimensions([1280, 800])
+mainScene = MySEAS.Engine.newScene(name='mainScene', isTargeted=True)
 
-mainScene = MySEAS.Engine.newScene(name='mainScene', isTargeted=True) # Can also be accessed in MySEAS.Engine.getScene() (returns the current scene)
-mainScene.newObject(name='Ob1', components=[MySEAS.RenderPoly(), MySEAS.transformPoly([100, 100], [150, 150], [170, 180])])
+mainScene.newObject(name='Ob1',
+                    components=[MySEAS.RenderPoly(),
+                    MySEAS.transformPoly([100, 100], [150, 150], [170, 180])])
 
 MySEAS.run()
 ```
