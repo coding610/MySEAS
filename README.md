@@ -8,7 +8,7 @@ As I mentioned in the introduction I built this for me only. I was in no way hop
 you're part of the targetted audince. Theres a "documentation.md" in the base folder. There is everything you need to know!
 
 ## A quick demo
-'''
+```
 import MySEAS
 
 MySEAS.setWnDimensions([1280, 800])
@@ -17,7 +17,7 @@ mainScene = MySEAS.Engine.newScene(name='mainScene', isTargeted=True) # Can also
 mainScene.newObject(name='Ob1', components=[MySEAS.RenderPoly(), MySEAS.transformPoly([100, 100], [150, 150], [170, 180])])
 
 MySEAS.run()
-'''
+```
 This demo is minimal and great if you encounter any problems downloading the module.
 
 ## Download
