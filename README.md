@@ -11,8 +11,8 @@ you're part of the targetted audince. Theres a "documentation.md" in the base fo
 ```
 import MySEAS
 
-MySEAS.setWnDimensions([1280, 800])
-mainScene = MySEAS.Engine.newScene(name='mainScene', isTargeted=True)
+MySEAS.MOEC.setWnDimensions([1280, 800])
+mainScene = MySEAS.MOEC.newScene(name='mainScene', isTargeted=True)
 
 mainScene.newObject(name='Ob1',
                     components=[MySEAS.RenderPoly(),
@@ -20,16 +20,14 @@ mainScene.newObject(name='Ob1',
 
 MySEAS.run()
 ```
-This demo is minimal and great if you encounter any problems downloading the module.
+This demo is minimal and great if you encounter any problems downloading the module. MOEC stands for "My Over Engineered Core". Theres also MOES for scene and more.
 
 ## Download
-This project is available at pypi by the name of MySEAS. Ive linked it below in the "Refered" tab.
-If your familiar with pip do as you want but for those who are not:
-1. pip3 install MySEAS
-2. Finished!
-Look up the pypi latest version. Then you can copy that verison and do this
-1. pip3 install MySEAS==<verison>
-2. Finished
+This project is available at pypi by the name of My-SEAS. Ive linked it below in the "Refered" tab. Just install it by using pip. If you find trouble getting the latest version try
+
+```
+pip3 install My-SEAS==<version>
+```
 
 ## Refered links
-
+https://pypi.org/project/My-SEAS/

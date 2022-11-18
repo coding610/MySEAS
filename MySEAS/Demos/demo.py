@@ -1,4 +1,14 @@
 import MySEAS
+import time
 
 
-MySEAS.MOEC.newScene("mainScene", True)
+# COREMODS
+MySEAS.MOEC.targetCoreModule('Window', MySEAS.MOEW())
+
+# SCENES
+MySEAS.MOEC.newScene(sceneName="mainScene", isTargeted=True)
+
+# Start scene
+MySEAS.MOEC.startMOEC()
+time.sleep(1)
+MySEAS.MOEC.stopMOEC()
